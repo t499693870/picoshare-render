@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: picoshare
+    env: docker
+    repo: https://github.com/mtlynch/picoshare
+    envVars:
+      - key: PORT
+        value: 3001
+    healthCheckPath: /
+  #  disk:
+   #   name: data
+    #  mountPath: /data
