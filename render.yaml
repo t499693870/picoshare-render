@@ -6,6 +6,8 @@ services:
     envVars:
       - key: PORT
         value: 3001
+      - key: PS_SHARED_SECRET
+        value: 123456
     healthCheckPath: /
   #  disk:
    #   name: data
